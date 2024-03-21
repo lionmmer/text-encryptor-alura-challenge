@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Text Encryptor</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <h1 class="principal-title">¡Esconde tu mensaje de los intrusos!</h1>
+        </div>
+        
+    </header>
+    <main>
+
+        <section class="forms-ebox">
+            <img class="boveda-cerrada" src="/Images/boveda-cerrada.png" alt="boveda-cerrada.png">
+            <form>
+                <textarea class="ebox" id="encode-box" cols="70" rows="10" placeholder="Oculta tu mensaje de los mirones 👀"></textarea>
+                <img class="warning-img" src="/Images/advertencia.png" alt="advertencia.png">
+                <p class="warning">Solo letras minúsculas y sin acentos</p>
+            </form>
+        </section>
+
+        <section class="forms-dbox">
+            <img class="boveda-abierta" src="/Images/boveda-abierta.png" alt="boveda-abierta.png">
+            <form>
+                <textarea class="dbox" id="decode-box" cols="70" rows="10" placeholder="Revela tu mensaje"></textarea>
+            </form>
+        </section>
+
+
+        <section class="button-container-box">
+            <button id="encode-button" onclick="encoding()" class="button-container">Encriptar</button>
+            <button id="decode-button" onclick="decoding()" class="button-container">Descifrar</button>
+        </section>
+         
+
+    </main>
+
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+<footer>
+    <h2 class="second-title">Made with ❤️ by lionmmer 2024</h2>
+</footer>
+</html>
